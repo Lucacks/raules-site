@@ -1,9 +1,152 @@
-#sec-5{
+.sec-5-background{
     width: 100%;
     background: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec-5{
+    width: 72.9%;
+    background: var(--dark-color);
     color: var(--white-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#sec-5 h6{
+    margin-top: 70px;
+}
+
+#sec-5 h6::after,
+#sec-5 h6::before{    
+    border-bottom: 1px solid var(--white-color);
 }
 
 .contact-container{
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-bottom: 160px;
+}
+
+.contact-container h2{
+    font-size: 3.6rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.divide{
+    width: 50%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.name-email{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-email input,
+form input, 
+form textarea{
+    width: 47%;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    background: #232323;
+    border: 1px solid #373737;
+
+    color: var(--white-color);
+    font-size: 2.2rem;
+    padding-left: 15px;
+    padding-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name-email input::placeholder,
+form input::placeholder, 
+form textarea::placeholder{
+    color: #8E8E8E;
+}
+.name-email input:focus,
+form input:focus, 
+form textarea:focus{
+}
+
+form input,
+form textarea{
+    width: 100%;
+}
+
+form textarea{
+    height: auto;  
+    resize: none;
+}
+
+form button{
+    padding: 15px 40px;
+
+    font-size: 2.4rem;
+    color: var(--white-color);
+
+    border-radius: 50px;
+    border: none;
+    background: var(--blue-color);
+
+    cursor: pointer;
+}
+
+aside{
+    margin-left: 150px;
+}
+
+aside > p{
+    font-size: 2.4rem;
+    margin-bottom: 70px;
+}
+
+aside .data{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+}
+
+aside .data strong,
+aside .data p{
+    font-size: 2.4rem;
+}
+
+aside .data p{
+    margin-bottom: 40px;
+}
+
+.info-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.info-container .icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: var(--blue-color);
+    font-size: 7rem;
+
+    border-right: 1px solid rgba(196, 196, 196, .2);
+    margin-right: 40px;
+    padding-right: 40px;
+}
+
+.info-container .icons i{    
+    margin-bottom: 40px;
 }
