@@ -10,6 +10,9 @@
     width: 100%;
 
     position: absolute;
+
+    overflow-x:hidden;
+    overflow-y:hidden;
     z-index: -20;
 }
 

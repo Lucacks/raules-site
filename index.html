@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raul Ribeiro</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/video.css">
     <link rel="stylesheet" href="style/section-1-style.css">
     <link rel="stylesheet" href="style/section-2-style.css">
+    <link rel="stylesheet" href="style/section-3-style.css">
     <link rel="stylesheet" href="style/section-4-style.css">
     <link rel="stylesheet" href="style/section-5-style.css">
     <link rel="stylesheet" href="style/footer-style.css">
@@ -19,10 +21,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
+        
 
+    <script src="js/lettering.js"></script>
 </head>
 
-<body>     
+<body>
+    <div class="showcase">
+        <video src="assets/Eu_ESL_BH.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Raul "Raules" Ribeiro</h2>            
+            <h3>Um <span class="txt-rotate"
+                data-period="2000"
+                data-rotate='[ "analista", "comentarista", "torcedor"]'></span></h3>
+            <button class="show" type="button" onclick="showContent()">Bora que vamo?</button>
+        </div>
+    </div>
 
     <div class="container">
         <div class="social">
@@ -41,7 +56,7 @@
                         <a href="#sec-5">Contato</a>
                     </nav>
                 </div>
-            </header>   
+            </header>
             <h1>Raul "RauleS" Ribeiro</h1>
             <p>Analista</p>
             <div class="language">
@@ -57,7 +72,10 @@
                 <div class="about">
                     <h3>Quem sou eu?</h3>
                     <h4>Me chamo Raul, mas pode me chamar de "RauleS'.</h4>
-                    <p>Comecei nesse universo há alguns anos, especificamente em 2019, na final da ECS Season 7. Desde então sigo respirando e vivendo aquilo que nos movimenta, o e-sport. Atualmente estou atuando como comentarista e analista, com foco em CS:GO e Valorant. Mas sempre estou aberto a novas oportunidades e cenários.</p>
+                    <p>Comecei nesse universo há alguns anos, especificamente em 2019, na final da ECS Season 7. Desde
+                        então sigo respirando e vivendo aquilo que nos movimenta, o e-sport. Atualmente estou atuando
+                        como comentarista e analista, com foco em CS:GO e Valorant. Mas sempre estou aberto a novas
+                        oportunidades e cenários.</p>
                     <div class="data">
                         <p><strong>Nome:&nbsp</strong> Raul Ribeiro</p>
                         <p><strong>Email:&nbsp</strong> raulesrib@gmail.com</p>
@@ -69,7 +87,8 @@
         </div>
 
         <div id="sec-3">
-            <img src="assets/Third part.png" alt="">
+            <img src="assets/raules-bg-01.jpg" alt="">
+            <div class="videos-container"></div>
         </div>
 
         <div id="sec-4">
@@ -107,18 +126,19 @@
                 <h6>Contato</h6>
                 <div class="contact-container">
                     <form class="divide" action="https://formsubmit.co/your@email.com" method="POST" />
-                        <h2>Me mande uma mensagem</h2>
-                        <div class="name-email">
-                            <input type="text" name="Nome" id="" placeholder="Nome">
-                            <input type="email" name="Email" id="" placeholder="Email">
-                        </div>
-                        <input type="text" name="Assunto" id="" placeholder="Assunto">
-                        <textarea name="Mensagem" id="" cols="30" rows="6" placeholder="Mensagem"></textarea>
-                        <button type="submit">Enviar mensagem</button>
+                    <h2>Me mande uma mensagem</h2>
+                    <div class="name-email">
+                        <input type="text" name="Nome" id="" placeholder="Nome">
+                        <input type="email" name="Email" id="" placeholder="Email">
+                    </div>
+                    <input type="text" name="Assunto" id="" placeholder="Assunto">
+                    <textarea name="Mensagem" id="" cols="30" rows="6" placeholder="Mensagem"></textarea>
+                    <button type="submit">Enviar mensagem</button>
                     </form>
                     <aside class="divide">
                         <h2>Informações para contato</h2>
-                        <p>Caso deseje entrar em contato, fazer parcerias ou divulgar seu trabalho, entre em contato comigo.</p>
+                        <p>Caso deseje entrar em contato, fazer parcerias ou divulgar seu trabalho, entre em contato
+                            comigo.</p>
                         <div class="info-container">
                             <div class="icons">
                                 <i class="fas fa-user"></i>
@@ -150,6 +170,8 @@
         <p>Site pensado e criado por <a href="https://www.linkedin.com/in/lucacks/">Lucas Alves</a></p>
         <p>Ideia, design e desenvolvimento feitos por mim, Lucas. :)</p>
     </footer>
-    </body>
+
+    <script src="js/script.js"></script>
+</body>
 
 </html>
